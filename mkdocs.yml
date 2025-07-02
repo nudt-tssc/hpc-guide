@@ -1,0 +1,37 @@
+site_name: 高性能计算实践导论 | TSSC俱乐部
+
+theme:
+  name: material
+  palette:
+    primary: custom
+  logo: assets/tssc.svg
+  favicon: assets/tssc.svg
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.path
+    - search.suggest
+    - content.tabs.link
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  homepage: https://hpc-guide.nudt.space
+
+plugins:
+  - search
+
+repo_url: https://github.com/nudt-tssc/hpc-guide
+repo_name: nudt-tssc/hpc-guide
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - 绪论:
+    - 高性能计算的基本概念: 'intro/lec1.md'
+  - CUDA编程:
+    - CUDA编程模型: 'cuda/lec1.md'
